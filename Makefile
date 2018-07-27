@@ -18,9 +18,12 @@ requirements:
 	pip install -r requirements.txt
 
 ## Make Dataset
-data: requirements
+data:
 	python src/data/get_data.py
 
+train:
+	python src/models/model_main.py
+	
 ## Delete all compiled Python files
 clean:
 	find . -name "*.pyc" -exec rm {} \;

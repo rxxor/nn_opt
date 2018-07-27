@@ -1,7 +1,7 @@
 nn_opt
 ==============================
 
-Optimizing the Bostin Dataset with Tensorflow
+Optimizing the Boston Dataset with Tensorflow
 
 Project Organization
 ------------
@@ -9,11 +9,15 @@ Project Organization
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
+    ├── logging.ini        <- Config file with logging parameters
     ├── data
     │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
+    │   	├── predictors.csv
+    │   	├── target.csv
+	│   	└── features.txt
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
@@ -27,7 +31,7 @@ Project Organization
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
-    │   └── logs	       <- Run logs
+    │   └── logs	       <- Logs of model run
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
@@ -42,7 +46,8 @@ Project Organization
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
-    │   │   └── nn_opt.py
+    │   │   ├── model_main.py
+    │   │   ├── artemis.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
 
